@@ -191,19 +191,23 @@ const Login = () => {
      )}
       </Formik>
         <View style={{
-          width:"auto",justifyContent:"flex-end",alignItems:"flex-end"
+          width:"auto",justifyContent:"flex-end",alignItems:"flex-end",marginVertical:20
         }}>
         <TouchableOpacity><Text>Forgot Password</Text></TouchableOpacity>
         </View>
         <TouchableOpacity style={styles.loginBut}>
-          <Text>Login</Text>
+          <Text style={{fontWeight:'400',color:'white'}}>Login</Text>
         </TouchableOpacity>
         <View style={styles.oauthView}>
-        <AntDesign name="google" size={24} color="black" />
-        <FontAwesome5 name="facebook" size={24} color="black" />
-        <AntDesign name="github" size={24} color="black" />
+        <AntDesign name="google" size={30} color="black" />
+        <FontAwesome5 name="facebook" size={30} color="blue" />
+        <AntDesign name="github" size={30} color="black" />
         </View>
-        <TouchableOpacity><Text>Create Account</Text></TouchableOpacity>
+        <View style={{justifyContent:'center',flexDirection:'row',marginTop:10,padding:20}}>
+          <Text >Don't have Account ? </Text>
+        <TouchableOpacity><Text>Sign Up</Text></TouchableOpacity>
+        </View>
+       
         
       </View>
        
@@ -238,7 +242,7 @@ const styles=StyleSheet.create({
     
   },
   loginBut:{
-    height:10,
+    height:20,
     width:"auto",
     backgroundColor:"black",
     borderRadius:20,
